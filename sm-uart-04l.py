@@ -62,7 +62,7 @@ for i in range(3):
 	if serial_number != False:
 		break
 
-print("Serial number: " + serial_number + "\n")
+print("Serial number: " + str(serial_number) + "\n")
 
 print("PM1\tPM2.5\tPM10\tErrors")
 
@@ -82,7 +82,7 @@ while True:
 		if error_byte & 0b00000100 != 0:
 			errors.append("fan error")
 		if len(errors) == 0:
-			errors.append("none")
+			errors.append("no error")
 
 		print("{0}\t{1}\t{2}\t{3}".format(value_pm1, value_pm2_5, value_pm10, ", ".join(errors)))
 	else:
