@@ -30,3 +30,5 @@ Also available is cable assembly [SFSDT](https://www.samtec.com/products/sfsdt) 
 | 10 SET/SLEEP | 3.3 V             |
 
 Connect 100 nF, 22 μF and 220 μF capacitor between 5 V and ground per data sheet (page 3).
+
+To enable UART on Raspberry Pi: `sudo raspi-config` → *3 Interface Options* → *P6 Serial Port* → *No* for login shell and *Yes* for serial port hardware.
